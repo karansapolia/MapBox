@@ -120,7 +120,7 @@
 		});
 	}
 
-	geojson=$.getJSON('data.geo.json', function (geojson) {
+	geojson=$.getJSON('india-states.js', function (geojson) {
   L.geoJson(geojson, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup(feature.properties.name);
